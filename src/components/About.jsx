@@ -92,7 +92,7 @@ const About = () => {
     <Section>
       <Container>
         <Left>
-          <Img src="./public/img/enggang.jpg" alt="" />
+          <Img src="./img/enggang.jpg" alt="" />
         </Left>
         <Right>
           <Judul>Burung Enggang</Judul>
