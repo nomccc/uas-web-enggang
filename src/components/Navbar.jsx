@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import { styled } from 'styled-components'
 
 const Section = styled.div`
@@ -8,13 +9,18 @@ justify-content: center;
 
 const Container = styled.div`
 /* width: 90%; */
-width: 1200px;
+width: 100%;
 /* background-color: powderblue ; */
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 2% 0px;
+padding: 1% 5%;
 position: fixed;
+z-index: 10;
+background-color: #ffffffb1;
+
+
+
 
 @media only screen and (max-width: 786px) {
     width: 100%;
@@ -36,7 +42,10 @@ cursor: pointer;
 align-items: start;
 font-family: 'Times New Roman', Times, serif;
 font-style: italic;
-color: #ffcc54;
+color: #cfcf13;
+font-size: 25px;
+font-weight: bold;
+-webkit-text-stroke: 0.5px black;
 
 @media only screen and (max-width: 786px) {
    display: none;
@@ -63,18 +72,19 @@ font-size: 20px;
 const Navbar = () => {
   return (
     <Section>
-      <Container>
+      <Container className='drop-shadow-xl'>
         {/* <Links> */}
         <Logo>Fly Enggang</Logo>
         <List>
           <ListItem>
-            <a href="/">Beranda</a>
+            <Link to="/" className='cursor-pointer'>Beranda</Link>
           </ListItem>
           <ListItem>
-            <a href="/informasi">Informasi</a>
+            <Link to="/informasi" className='cursor-pointer' >Informasi</Link>
+
           </ListItem>
           <ListItem>
-            <a href="/kontak">Kontak</a>
+            <Link to="/kontak">Kontak</Link>
           </ListItem>
         </List>
         {/* </Links> */}

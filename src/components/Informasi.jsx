@@ -68,6 +68,13 @@ const Img = styled.img`
   }
 `;
 
+const Konten = styled.p`
+font-size: 20px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: #2c2c2c;
+
+`
+
 
 const Informasi = () => {
   return (
@@ -77,7 +84,7 @@ const Informasi = () => {
           <Img src="./img/rangkong_gading.png"/>
         </Left>
         <Middle></Middle>
-        <right></right>
+        <Right></Right>
       </Container>
     </Section>
   );

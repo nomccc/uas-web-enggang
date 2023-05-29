@@ -3,73 +3,7 @@ import { styled } from "styled-components";
 import { MeshDistortMaterial, Sphere, OrbitControls } from "@react-three/drei";
 import { Canvas, useLoader } from "@react-three/fiber";
 import { TextureLoader } from "three";
-import ToDo from "./ToDo";
 
-const Section = styled.div`
-  height: 100vh;
-  scroll-snap-align: center;
-  justify-content: space-between;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  @media only screen and (max-width: 786px) {
-    height: 200vh;
-  }
-`;
-
-const Container = styled.div`
-  height: 100%;
-  width: 1000px;
-  display: flex;
-  justify-content: space-between;
-  /* align-items: center; */
-
-  @media only screen and (max-width: 786px) {
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-`;
-
-const Left = styled.div`
-  flex: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
-
-  @media only screen and (max-width: 786px) {
-    flex: 1;
-    align-items: center;
-  }
-`;
-
-const Judul = styled.h1`
-  font-size: 70px;
-  color: #292929;
-
-  @media only screen and (max-width: 786px) {
-    text-align: center;
-  }
-`;
-
-const SubJudul = styled.h3`
-  color: #0b518b;
-`;
-
-const Deskripsi = styled.p``;
-
-const Right = styled.div`
-  flex: 3;
-  position: relative;
-
-  @media only screen and (max-width: 786px) {
-    flex: 1;
-    width: 100%;
-  }
-`;
 
 const Img = styled.img`
   width: 70%;
@@ -81,6 +15,7 @@ const Img = styled.img`
   right: 0;
   margin-bottom: auto;
   animation: animate 2s infinite ease alternate;
+
 
   @keyframes animate {
     to {
@@ -97,17 +32,17 @@ const Img = styled.img`
 
 const Welcome = () => {
   return (
-    <Section>
-      {/* <Navbar /> */}
-      <Container>
-        <Left>
-          <Judul>Sadari. Lindungi.</Judul>
-          <SubJudul>Mari Mengenal Burung Enggang</SubJudul>
-          <Deskripsi>
+    <section className="md:h-screen flex h-[200vh] snap-center">
+      <div className="md:container md:mx-auto w-[1000px] flex px-8  ">
+        <div id="kiri" className="flex-1 flex-col items-center justify-end gap-5 mt-[15%] pl-14 leading-10">
+          <h1 className="text-8xl font-bold  text-[#292929]">Sadari. Lindungi.</h1>
+          <h3 className="text-[#197dc9] font-semibold text-[25px] py-6">Mari Mengenal Burung Enggang</h3>
+          <p className="text-xl" >
             Bersama mulai mengenal dan melindungi apa yang jadi kebanggaan kita
-          </Deskripsi>
-        </Left>
-        <Right>
+          </p>
+        </div>
+
+        <div id="kanan" className="flex-1 relative py-7">
           <Canvas>
             <OrbitControls enableZoom={false} autoRotate />
             <ambientLight intensity={1} />
@@ -121,10 +56,16 @@ const Welcome = () => {
               />
             </Sphere>
           </Canvas>
-          <Img src="./img/enggang2.png" alt="" />
-        </Right>
-      </Container>
-    </Section>
+          <Img src="./img/enggang2.png"></Img>
+
+          {/* <img id="enggang-welcome"
+            className="w-[70%] object-contain top-24 left-12 animate-pulse absolute"
+            src="./img/enggang2.png"
+            alt=""
+          /> */}
+        </div>
+      </div>
+    </section>
   );
 };
 
