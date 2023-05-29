@@ -5,7 +5,7 @@ import Duck from "./Duck";
 
 const Author = () => {
   return (
-    <section className="h-[100vh] snap-center">
+    <section className="h-auto snap-center">
       <div className="container w-full h-full flex-row justify-center items-center pb-20">
         <div className="flex-1 justify-center  items-center flex-row ">
           <Canvas>
