@@ -65,6 +65,7 @@ const Tombol = styled.button`
 
 const About = () => {
   return (
+<<<<<<< HEAD
     <section className="md:h-screen flex h-[200vh] items-center snap-center">
       <div className="md:container md:mx-auto w-[1000px] flex px-8">
         <div className="flex-1 relative">
@@ -74,6 +75,16 @@ const About = () => {
           <h1 className="font-bold text-7xl">Burung Enggang</h1>
           {/* <h1 className="text-5xl" >Burung Enggang</h1> */}
           <h3 className="text-[#0b518b] font-semibold font-serif">
+=======
+    <Section>
+      <Container>
+        <Left>
+          <Img src="./img/enggang.jpg" alt="" />
+        </Left>
+        <Right>
+          <Judul>Burung Enggang</Judul>
+          <SubJudul>
+>>>>>>> 4ac238251551385209a3d6d91c9887cd3eeac552
             Atau biasa disebut Rangkong, Julang, atau Kangkareng
           </h3>
           <Isi>
