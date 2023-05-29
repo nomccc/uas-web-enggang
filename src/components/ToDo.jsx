@@ -1,18 +1,6 @@
 import React from "react";
 import { styled } from "styled-components";
 
-const Section = styled.div`
-  height: 100vh;
-  scroll-snap-align: center;
-  justify-content: center;
-  display: flex;
-  position: relative;
-  color: black;
-
-  @media only screen and (max-width: 786px) {
-    height: 200vh;
-  }
-`;
 
 const Container = styled.div`
   width: 1000px;
@@ -110,9 +98,10 @@ const hal = [
 
 const ToDo = () => {
   return (
-    <Section>
-      <Container>
-        <Left>
+    
+    <section className="flex h-[100vh] snap-center md:h-screen" > 
+      <div className="md:container container md:mx-auto flex px-8 md:items-center">
+        <div className="flex-1 flex items-center">
           <List>
             {data.map((item) => (
               <ListItem key={item} text={item} onClick={() => setWork(item)}>
@@ -120,8 +109,8 @@ const ToDo = () => {
               </ListItem>
             ))}
           </List>
-        </Left>
-        <Right>
+        </div>
+        <div className="flex-1 flex items-center">
           <List>
           {hal.map((item) => (
               <ListToDo key={item} text={item} onClick={() => setWork(item)}>
@@ -129,9 +118,9 @@ const ToDo = () => {
               </ListToDo>
             ))}
           </List>
-        </Right>
-      </Container>
-    </Section>
+        </div>
+      </div>
+    </section>
   );
 };
 

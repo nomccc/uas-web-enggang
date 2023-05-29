@@ -1,0 +1,203 @@
+{
+  "accessors": [
+    {
+      "componentType": 5125,
+      "count": 540,
+      "type": "SCALAR"
+    },
+    {
+      "componentType": 5126,
+      "count": 540,
+      "max": [
+        1.0009804368019104,
+        1.0068874747145409,
+        1.001526614965177
+      ],
+      "min": [
+        -1.0034087688315148,
+        -1.0053313762533898,
+        -0.9950329453337426
+      ],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 540,
+      "max": [
+        40.23972049782087,
+        19.88524659179628,
+        68.81584850100698
+      ],
+      "min": [
+        -40.168976937029846,
+        -19.789323006365784,
+        1.5927647011537462
+      ],
+      "type": "VEC3"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "VARRRG (https://sketchfab.com/VladislavFehu)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/love-low-poly-dd3b881a34904991878dc6a5a05aa1f6",
+      "title": "Love Low Poly"
+    },
+    "generator": "Sketchfab-12.67.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 747
+    }
+  ],
+  "buffers": [
+    {
+      "name": "love",
+      "byteLength": 752,
+      "uri": "data:application/octet-stream;base64,RFJBQ08CAgEBAAAAXLQBAbMBBgAtf960j3qqqu8TpapFS6toq7RVqtXS0irVKlWlVVVaWqqqtKiq0tJSWkopLUUBAQEQAQIcXQL/AAAAAQABAAkDAAECAQEJAwAAAwEBAQAMF7SpB7kZRRZFBmUBGf+Kz/g5pjLRyIjTfodI9i8VXo7n0oXiD4GbBbjRGMFFV+u3Zqf9VpoIGFK2iIK3QfJ4RhxrES8p9rCAdkrh7JNBy4M/K2hXcQDhclhFgjYMeHyLLyMBFE+voTm07JXVXni1IOVyTMBF2L698R3gFqpPr7m+RnQtZPXWgslEOIUyTx5IA+BGdl9vWRpCBt4YU9YK2Mm9MZjUIJHUCQsts+TlkDKTtrZjhDKBGTeHjINX5/qDoG79bV0wd0R1eBEHPm6ram7t4L6jqBAzxVieS/elQTvywGuYoDAAMVcRYGjV2tkPTdZkrnvO7rlq9zSp6tVDnKSNYm+agDTFDoD3UWCnrkRMRRQQjo8z9JwqFA40MUaH4TxbhOwfG7sIcDTVfZ137kJLPrsS1awQQBEkADptUQTBB2ivjMXaDBolAQAAAAD/BwAA2YQgwioAnsGg5dA/EqmgQgsGAwEBA/8BrRoBEMEG////5yxpDoACYdhV/iNK/i0H9Xpc95Dgb36zYakPZmQ0u1eJc/B9SQo/3E3ybIIpYTNrofftcx9m9nJ6Xz9uzLxUojVkWCm1ROw7DmaOSg+Han5woVPwuM5iqek+k8vBIbWWojVwVsLsyDkb9Mj2iM+veUK6fOKpIFtmAsitVZNGk/surO8dUzNMGzf5VLfv52N58p7LTIVpK5bq4k3GaAE0UC4CZcADQxKtCmlxINK3TIVFBoAgE53Zlou77pTqW0fFxiL82+5Celz3nOY1Inu+fCIJOSs/QKbfzMkP/nhOysI/fz7iilKe/DkhWmQC+OQETstEyo9VGeYC4xIPZFenkzlyMEwIg/8AAAB/AAAA/wMNeIAIAAAAAAA="
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "Material_30",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.423529,
+          0.0196078,
+          0.0196078,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.6
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE"
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Object_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 2
+          },
+          "indices": 0,
+          "material": 0,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 0,
+              "attributes": {
+                "NORMAL": 0,
+                "POSITION": 1
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        2.220446049250313e-16,
+        -1,
+        0,
+        0,
+        1,
+        2.220446049250313e-16,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        33.41501235961914,
+        1
+      ],
+      "name": "Love"
+    },
+    {
+      "children": [
+        3
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -33.41501235961914,
+        1
+      ],
+      "name": "3DSMeshMatrix"
+    },
+    {
+      "mesh": 0,
+      "name": "Object_3"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "extensionsRequired": [
+    "KHR_draco_mesh_compression"
+  ],
+  "extensionsUsed": [
+    "KHR_draco_mesh_compression"
+  ]
+}

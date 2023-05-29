@@ -64,7 +64,7 @@ const Habitat = () => {
             </Stage>
             <OrbitControls enableZoom={false} autoRotate />
             <ambientLight intensity={0.1} />
-            <directionalLight position={[3, 2, 1]} />
+            <directionalLight position={[0, 0, 1]} />
           </Canvas>
         </Right>
       </Container>

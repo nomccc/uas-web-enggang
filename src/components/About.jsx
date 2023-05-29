@@ -9,7 +9,7 @@ const Img = styled.img`
   position: absolute;
   top: 40px;
   bottom: 0;
-  left: 15%;
+  left: 20%;
   right: 0;
   margin-bottom: auto;
   border-radius: 10px;
@@ -65,28 +65,28 @@ const Tombol = styled.button`
 
 const About = () => {
   return (
-    <section className="md:h-screen flex h-[200vh] items-center snap-center">
+    <section className="md:h-screen flex h-[100vh] items-center snap-center">
       <div className="md:container md:mx-auto w-[1000px] flex px-8">
         <div className="flex-1 relative">
-          <Img src="./public/img/enggang.jpg" alt="" />
+          <Img src="./img/enggang.jpg" alt="" />
         </div>
-        <div className="flex-1 flex flex-col justify-center gap-5 pt-10 px-6">
+        <div className="flex-1 flex flex-col justify-center gap-5 pt-16 px-6">
           <h1 className="font-bold text-7xl">Burung Enggang</h1>
           {/* <h1 className="text-5xl" >Burung Enggang</h1> */}
           <h3 className="text-[#0b518b] font-semibold font-serif">
             Atau biasa disebut Rangkong, Julang, atau Kangkareng
-          </h3>
-          <Isi>
+          </h3> 
+          <p>
             adalah burung yang mempunyai paruh berbentuk tanduk sapi tetapi
             tanpa lingkaran. Biasanya paruhnya itu berwarna terang.
-          </Isi>
-          <Isi>
+          </p>
+          <p>
             Enggang di Indonesia adalah penghuni hutan atau tepi hutan dengan
             ukuran besar hingga sangat besar, sering kali dengan paruh besar dan
             penutup yang berlebihan. Kehadiran mereka sering dikenali dengan
             suara kepakan sayap mereka dalam penerbangan dan panggilan khas
             mereka yang jauh.
-          </Isi>
+          </p>
             <Link to="/informasi" className="cursor-pointer p-2 bg-red-400 text-center rounded-xl hover:bg-red-200 hover:text-[grey] transition duration-150">
               Cari tau lebih dalam
             </Link>

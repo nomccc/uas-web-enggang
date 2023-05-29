@@ -15,7 +15,7 @@ export default function Model(props) {
     <group {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
         <group rotation={[Math.PI / 2, 0, 0]}>
-          <mesh
+          <mesh 
             castShadow
             receiveShadow
             geometry={nodes.earth4_blinn1_0.geometry}

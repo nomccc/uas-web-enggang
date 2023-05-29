@@ -17,7 +17,7 @@ align-items: center;
 padding: 1% 5%;
 position: fixed;
 z-index: 10;
-background-color: #ffffffb1;
+background-color: #ffffff;
 
 
 
@@ -74,7 +74,7 @@ const Navbar = () => {
     <Section>
       <Container className='drop-shadow-xl'>
         {/* <Links> */}
-        <Logo>Fly Enggang</Logo>
+        <Logo>HelloEnggang</Logo>
         <List>
           <ListItem>
             <Link to="/" className='cursor-pointer'>Beranda</Link>
@@ -84,7 +84,7 @@ const Navbar = () => {
 
           </ListItem>
           <ListItem>
-            <Link to="/kontak">Kontak</Link>
+            <Link to="/kontak">Tentang</Link>
           </ListItem>
         </List>
         {/* </Links> */}

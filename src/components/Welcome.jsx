@@ -32,9 +32,9 @@ const Img = styled.img`
 
 const Welcome = () => {
   return (
-    <section className="md:h-screen flex h-[200vh] snap-center">
+    <section className=" flex h-[100vh] snap-center md:h-screen">
       <div className="md:container md:mx-auto w-[1000px] flex px-8  ">
-        <div id="kiri" className="flex-1 flex-col items-center justify-end gap-5 mt-[15%] pl-14 leading-10">
+        <div id="kiri" className="flex-1 flex-col items-center justify-end gap-5 mt-[15%] leading-10">
           <h1 className="text-8xl font-bold  text-[#292929]">Sadari. Lindungi.</h1>
           <h3 className="text-[#197dc9] font-semibold text-[25px] py-6">Mari Mengenal Burung Enggang</h3>
           <p className="text-xl" >
@@ -42,7 +42,7 @@ const Welcome = () => {
           </p>
         </div>
 
-        <div id="kanan" className="flex-1 relative py-7">
+        <div id="kanan" className="flex-1 relative py-7 w-screen">
           <Canvas>
             <OrbitControls enableZoom={false} autoRotate />
             <ambientLight intensity={1} />
