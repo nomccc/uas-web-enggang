@@ -14,8 +14,10 @@ const Goal = () => {
         >
           <h1 className="text-7xl font-bold text-[#921e1e]">Terancam Punah</h1>
           <p className="text-lg pr-9 pt-5 font-sans">
-            sebagian besar akibat tingginya tingkat perburuan liar, perdagangan
-            ilegal, dan juga tingkat perkembanganbiakan yang lambat
+            berdasarkan daftar IUCN tahun 2018 burung Enggang Gading telah
+            termasuk dalam satwa berstatus terancam punah (Critically
+            Endangered), sebagian besar akibat tingginya tingkat perburuan liar,
+            perdagangan ilegal, dan juga tingkat perkembanganbiakan yang lambat
           </p>
         </div>
         <div id="kanan" className="flex-1 relative p-7 ">
@@ -26,7 +28,6 @@ const Goal = () => {
             <OrbitControls enableZoom={false} autoRotate />
             <ambientLight intensity={0.2} />
             <directionalLight position={[3, 2, 1]} />
-            {/* <Bola /> */}
           </Canvas>
         </div>
       </div>

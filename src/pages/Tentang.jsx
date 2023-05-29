@@ -1,10 +1,12 @@
 import React from 'react'
 import Kontak from '../components/Kontak'
+import Author from '../components/Author'
 
 const Tentang = () => {
   return (
     <div className="bg-sky bg-cover">
       <Kontak/>
+      <Author/>
     </div>
   )
 }

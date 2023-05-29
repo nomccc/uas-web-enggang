@@ -94,25 +94,25 @@ const Kontak = () => {
   };
 
   return (
-    <Section>
-      <Container>
-        <Left>
+    <section className="h-auto snap-center">
+      <div className="container w-full h-full flex justify-between items-center" >
+        <div className="flex-1 flex items-center justify-center py-24 gap-12">
           {/* buat bikin form isi cerita */}
           <Form ref={ref} onSubmit={handleSubmit}>
-            <Judul>Ceritakan kisahmu tentang Burung Enggang!</Judul>
+            <h1 className="text-2xl font-bold">Ceritakan kisahmu tentang Burung Enggang!</h1>
             <Input placeholder="Nama" name="name" />
             <Input placeholder="Email" name="email" />
             <TextArea placeholder="Tulis kisahmu disini!" name="message" rows={10}/>
             <Tombol type="submit">Kirim</Tombol>
             {success && "Pesan anda berhasil dikirim. Terimakasih :D"}
           </Form>
-        </Left>
+        </div>
 
         <Right>
           <Map />
         </Right>
-      </Container>
-    </Section>
+      </div >
+    </section>
   );
 };
 

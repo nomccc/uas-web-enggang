@@ -101,7 +101,7 @@ const ToDo = () => {
     
     <section className="flex h-[100vh] snap-center md:h-screen" > 
       <div className="md:container container md:mx-auto flex px-8 md:items-center">
-        <div className="flex-1 flex items-center">
+        <div className="flex-1 flex items-center pl-[20%]">
           <List>
             {data.map((item) => (
               <ListItem key={item} text={item} onClick={() => setWork(item)}>
@@ -110,10 +110,10 @@ const ToDo = () => {
             ))}
           </List>
         </div>
-        <div className="flex-1 flex items-center">
+        <div className="flex-1 flex items-center  pr-[10%] ">
           <List>
           {hal.map((item) => (
-              <ListToDo key={item} text={item} onClick={() => setWork(item)}>
+              <ListToDo className="font-sans font-medium text-xl leading-loose hover:text-[21px] hover:text-orange-600 ease-in duration-300 " key={item} text={item} onClick={() => setWork(item)}>
                 {item}
               </ListToDo>
             ))}

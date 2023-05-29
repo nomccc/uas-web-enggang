@@ -75,7 +75,7 @@ const Informasi = () => {
       <h1 className="text-3xl pb-10 font-bold font-serif text-orange-800 tracking-wide">
         Beberapa Macam Enggang di Indonesia
       </h1>
-      <div className="container  md:container h-full w-[1000px] justify-center  grid grid-cols-4 gap-6 px-11">
+      <div className="container  md:container h-full w-[1000px] justify-center  grid grid-cols-4 gap-6 px-11 ">
         <div className=" flex flex-col items-center  text-center leading-7">
           <img
             src="./img/rangkong_gading.png"
