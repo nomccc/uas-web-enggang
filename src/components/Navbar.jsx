@@ -2,29 +2,29 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import { styled } from 'styled-components'
 
-const Section = styled.div`
-display: flex;
-justify-content: center;
-height: auto;
+// const Section = styled.div`
+// display: flex;
+// justify-content: center;
+// height: auto;
 
-`;
+// `;
 
-const Container = styled.div`
-width: 100%;
-/* width: 100vh; */
-/* background-color: powderblue ; */
-display: flex;
-justify-content: space-between;
-align-items: center;
-/* padding: 1% 5%; */
-position: fixed;
-z-index: 10;
-background-color: #ffffff;
+// const Container = styled.div`
+// width: 100%;
+// /* width: 100vh; */
+// /* background-color: powderblue ; */
+// display: flex;
+// justify-content: space-between;
+// align-items: center;
+// /* padding: 1% 5%; */
+// position: fixed;
+// z-index: 10;
+// background-color: #ffffff;
 
 
-@media only screen and (max-width: 786px) {
-    width: 100%;
-  }
+// @media only screen and (max-width: 786px) {
+//     width: 100%;
+//   }
 
 
 `
@@ -72,7 +72,7 @@ font-size: 20px;
 const Navbar = () => {
   return (
     <section className='flex h-auto snap-center md:h-auto'>
-      <div className='drop-shadow-xl md:container md:mx-auto w-auto flex px-8 justify-between py-3 fixed z-10 bg-white'>
+      <div className='drop-shadow-xl md:container md:mx-auto w-auto flex px-8 justify-between py-3 fixed z-10 bg-white tablet:w-full'>
         {/* <Links> */}
         <Logo>HelloEnggang</Logo>
         <List>
