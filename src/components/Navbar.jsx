@@ -5,21 +5,21 @@ import { styled } from 'styled-components'
 const Section = styled.div`
 display: flex;
 justify-content: center;
+height: auto;
+
 `;
 
 const Container = styled.div`
-/* width: 90%; */
 width: 100%;
+/* width: 100vh; */
 /* background-color: powderblue ; */
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 1% 5%;
+/* padding: 1% 5%; */
 position: fixed;
 z-index: 10;
 background-color: #ffffff;
-
-
 
 
 @media only screen and (max-width: 786px) {
@@ -62,7 +62,7 @@ list-style: none;
 // 
 const ListItem  = styled.li`
 cursor: pointer;
-padding-right: 20px;
+/* padding-right: 20px; */
 z-index: 100;
 font-weight: bold;
 font-size: 20px;
@@ -71,8 +71,8 @@ font-size: 20px;
 
 const Navbar = () => {
   return (
-    <Section>
-      <Container className='drop-shadow-xl'>
+    <section className='flex h-auto snap-center md:h-auto'>
+      <div className='drop-shadow-xl md:container md:mx-auto w-auto flex px-8 justify-between py-3 fixed z-10 bg-white'>
         {/* <Links> */}
         <Logo>HelloEnggang</Logo>
         <List>
@@ -88,8 +88,8 @@ const Navbar = () => {
           </ListItem>
         </List>
         {/* </Links> */}
-      </Container>
-    </Section>
+      </div>
+    </section>
   )
 }
 
