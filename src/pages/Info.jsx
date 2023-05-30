@@ -5,7 +5,7 @@ import Setia from '../components/Setia'
 
 const Info = () => {
   return (
-    <div className="bg-sky bg-cover">
+    <div className="bg-sky bg-cover w-full">
       <Habitat/>
       <Informasi/>
       <Setia/>

@@ -32,11 +32,11 @@ const Img = styled.img`
 
 const Welcome = () => {
   return (
-    <section className=" flex h-[100vh] snap-center md:h-screen">
-      <div className="md:container md:mx-auto w-[1000px] flex px-8  ">
+    <section className=" flex h-[100vh] snap-center md:h-screen w-full">
+      <div className="md:container md:mx-auto w-[1000%] flex px-8  ">
         <div id="kiri" className="flex-1 flex-col items-center justify-end gap-5 mt-[15%] leading-10">
-          <h1 className="text-8xl font-bold  text-[#292929]">Sadari. Lindungi.</h1>
-          <h3 className="text-[#197dc9] font-semibold text-[25px] py-6">Mari Mengenal Burung Enggang</h3>
+          <h1 className="text-8xl font-bold  text-[#292929] tablet:w-auto">Sadari. Lindungi.</h1>
+          <h3 className="text-[#197dc9] font-semibold text-[25px] py-6 sm:w-auto">Mari Mengenal Burung Enggang</h3>
           <p className="text-xl" >
             Bersama mulai mengenal dan melindungi apa yang jadi kebanggaan kita
           </p>

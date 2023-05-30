@@ -4,7 +4,7 @@ import Author from '../components/Author'
 
 const Tentang = () => {
   return (
-    <div className="bg-sky bg-cover">
+    <div className="bg-sky bg-cover w-full">
       <Kontak/>
       <Author/>
     </div>
