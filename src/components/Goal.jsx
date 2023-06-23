@@ -6,7 +6,7 @@ import Earth from "./Earth";
 
 const Goal = () => {
   return (
-    <section className="container flex flex-col px-8 md:flex-row">
+    <section className="container flex flex-col px-8 md:flex-row md:max-w-7xl">
       <div
         id="kiri"
         className="flex-1 flex-col items-center justify-start gap-11 px-7 mt-[5%] leading-10 "

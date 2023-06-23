@@ -32,7 +32,7 @@ const Img = styled.img`
 
 const Welcome = () => {
   return (
-    <section className="container flex flex-col pb-24 px-8 md:flex-row md:pb-2">
+    <section className="container flex flex-col pb-24 px-8 md:flex-row md:pb-2 md:max-w-7xl">
       <div
         id="kiri"
         className="flex-1 flex-col items-center justify-end gap-5 mt-[15%] leading-10"

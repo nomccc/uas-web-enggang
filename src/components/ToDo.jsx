@@ -96,7 +96,7 @@ const hal = [
 
 const ToDo = () => {
   return (
-    <section className="container flex flex-row py-24 px-8  md:py-44">
+    <section className="container flex flex-row py-24 px-8  md:py-44 md:max-w-7xl">
       <div className="flex-1 flex items-center pl-[10%]">
         <List>
           {data.map((item) => (

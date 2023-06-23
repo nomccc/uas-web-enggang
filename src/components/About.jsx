@@ -29,7 +29,7 @@ const Img = styled.img`
 
 const About = () => {
   return (
-    <section className="container flex flex-col pb-24 px-8 md:flex-row md:py-44">
+    <section className="container flex flex-col pb-24 px-8 md:flex-row md:py-44 md:max-w-7xl">
         <div className="flex-1 relative">
           <Img src="./img/enggang.jpg" alt="" />
         </div>

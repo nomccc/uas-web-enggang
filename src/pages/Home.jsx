@@ -10,7 +10,7 @@ import Habitat from "../components/Habitat";
 
 const Home = () => {
   return (
-    <div className="bg-sky bg-cover sm:w-full">
+    <div className="bg-sky bg-cover w-full">
       <Welcome />
       <About />
       <Goal />
