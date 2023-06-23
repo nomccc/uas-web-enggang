@@ -71,8 +71,7 @@ font-size: 20px;
 
 const Navbar = () => {
   return (
-    <section className='flex h-auto snap-center md:h-auto '>
-      <div className='drop-shadow-xl md:container md:mx-auto w-auto flex px-8 justify-between py-3 fixed z-10 bg-white '>
+    <div className='drop-shadow-xl container bg-white sm:sticky-top-0 justify-between flex px-11 py-2 sm:py-4'>
         {/* <Links> */}
         <Logo>HelloEnggang</Logo>
         <List>
@@ -89,7 +88,6 @@ const Navbar = () => {
         </List>
         {/* </Links> */}
       </div>
-    </section>
   )
 }
 

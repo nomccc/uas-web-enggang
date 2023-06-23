@@ -1,7 +1,6 @@
 import React from "react";
 import { styled } from "styled-components";
 
-
 const Container = styled.div`
   width: 1000px;
   display: flex;
@@ -85,40 +84,41 @@ const ListItem = styled.li`
 
 const ListToDo = styled.li`
   cursor: pointer;
-  
-`
+`;
 
 const data = ["Apa", "Yang", "Harus", "Dilakukan?"];
 const hal = [
   "- Mendukung upaya pelestarian lingkungan",
   "- Melaporkan orang yang berburu satwa langka",
   "- Hindari transaksi binatang langka",
-  "- Menjaga Lingkungan Agar Tetap terjaga"
+  "- Menjaga Lingkungan Agar Tetap terjaga",
 ];
 
 const ToDo = () => {
   return (
-    
-    <section className="flex h-[100vh] snap-center md:h-screen" > 
-      <div className="md:container container md:mx-auto flex px-8 md:items-center">
-        <div className="flex-1 flex items-center pl-[20%]">
-          <List>
-            {data.map((item) => (
-              <ListItem key={item} text={item} onClick={() => setWork(item)}>
-                {item}
-              </ListItem>
-            ))}
-          </List>
-        </div>
-        <div className="flex-1 flex items-center  pr-[10%] ">
-          <List>
+    <section className="container flex flex-row py-24 px-8  md:py-44">
+      <div className="flex-1 flex items-center pl-[10%]">
+        <List>
+          {data.map((item) => (
+            <ListItem key={item} text={item} onClick={() => setWork(item)}>
+              {item}
+            </ListItem>
+          ))}
+        </List>
+      </div>
+      <div className="flex-1 flex items-center  pr-[10%] ">
+        <List>
           {hal.map((item) => (
-              <ListToDo className="font-sans font-medium text-xl leading-loose hover:text-[21px] hover:text-orange-600 ease-in duration-300 " key={item} text={item} onClick={() => setWork(item)}>
-                {item}
-              </ListToDo>
-            ))}
-          </List>
-        </div>
+            <ListToDo
+              className="font-sans font-medium text-xl leading-loose hover:text-[21px] hover:text-orange-600 ease-in duration-300 "
+              key={item}
+              text={item}
+              onClick={() => setWork(item)}
+            >
+              {item}
+            </ListToDo>
+          ))}
+        </List>
       </div>
     </section>
   );
