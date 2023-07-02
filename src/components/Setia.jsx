@@ -5,9 +5,8 @@ import Love from "./Love";
 
 const Setia = () => {
   return (
-    <section className=" flex h-[100vh] snap-center md:h-screen">
-      <div className="md:container  md:mx-auto w-[1000px] flex px-8 ">
-        <div id="kiri" className="flex-1 relative py-7 w-screen">
+    <section className="container flex flex-col pb-24 px-8 md:flex-row md:pb-2 md:max-w-7xl">
+        <div id="kiri" className="flex-1 relative py-7 pb-8">
           <Canvas>
             <Stage environment="city" intensity={0.7}>
               <Love />
@@ -39,7 +38,6 @@ const Setia = () => {
             siap keluar dari sarang membutuhkan waktu selama enam bulan.
           </p>
         </div>
-      </div>
     </section>
   );
 };

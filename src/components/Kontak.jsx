@@ -94,8 +94,7 @@ const Kontak = () => {
   };
 
   return (
-    <section className="h-auto snap-center">
-      <div className="container w-full h-full flex justify-between items-center" >
+    <section className="container flex flex-col pb-24 px-8 md:flex-row md:pb-2 md:max-w-7xl">
         <div className="flex-1 flex items-center justify-center py-24 gap-12">
           {/* buat bikin form isi cerita */}
           <Form ref={ref} onSubmit={handleSubmit}>
@@ -111,7 +110,6 @@ const Kontak = () => {
         <Right>
           <Map />
         </Right>
-      </div >
     </section>
   );
 };

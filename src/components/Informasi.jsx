@@ -1,66 +1,11 @@
 import React from "react";
 import { styled } from "styled-components";
 
-// const Section = styled.div`
-//   height: 100vh;
-//   scroll-snap-align: center;
-//   justify-content: space-between;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-
-//   @media only screen and (max-width: 786px) {
-//     height: 200vh;
-//   }
-// `;
-
-// const Container = styled.div`
-//   height: 100%;
-//   width: 1000px;
-//   display: flex;
-//   justify-content: space-between;
-//   /* align-items: center; */
-
-//   @media only screen and (max-width: 786px) {
-//     width: 100%;
-//     flex-direction: column;
-//     align-items: center;
-//     justify-content: center;
-//   }
-// `;
-
-// const Left = styled.div`
-//   display: flex;
-//   flex: 1;
-//   align-items: center;
-// `;
-
-// const Middle = styled.div`
-//   display: flex;
-//   flex: 1;
-//   align-items: center;
-// `;
-
-// const Right = styled.div`
-//   display: flex;
-//   flex: 1;
-//   align-items: center;
-// `;
-
 const Img = styled.img`
   width: 50%;
   padding-bottom: 5%;
   align-items: center;
   justify-content: center;
-
-  /* margin-bottom: auto; */
-  /* animation: animate 2s infinite ease alternate;
-
-  @keyframes animate {
-    to {
-      transform: translateY(30px);
-    }
-  } */
 
   @media only screen and (max-width: 786px) {
     width: 300px;
@@ -71,12 +16,12 @@ const Img = styled.img`
 
 const Informasi = () => {
   return (
-    <section className="h-auto snap-center justify-between flex flex-col items-center pb-24">
-      <h1 className="text-3xl pb-10 font-bold font-serif text-orange-800 tracking-wide">
+    <section className="container flex flex-col pb-24 px-8 md:flex-row md:pb-2 md:max-w-7xl">
+      <h1 className="text-2xl pb-10 font-bold font-serif text-orange-800 tracking-wide md:text-3xl">
         Beberapa Macam Enggang di Indonesia
       </h1>
-      <div className="container  md:container h-full w-[1000px] justify-center  grid grid-cols-4 gap-6 px-11 ">
-        <div className=" flex flex-col items-center  text-center leading-7">
+      <div className="container">
+        <div className=" flex flex-col items-center  text-center leading-7 pb-10">
           <img
             src="./img/rangkong_gading.png"
             className=" rounded-full border-4 border-y-sky-600 w-[50%] flex justify-center items-end "
@@ -90,7 +35,7 @@ const Informasi = () => {
             terancam punah di Indonesia.
           </p>
         </div>
-        <div className=" flex flex-col items-center  text-center leading-7">
+        <div className=" flex flex-col items-center  text-center leading-7 pb-10">
           <img
             src="./img/kangkareng_sulawesi.png"
             className=" rounded-full border-4 border-y-sky-600 w-[50%] flex justify-center items-end "
@@ -104,7 +49,7 @@ const Informasi = () => {
             lainnya, mereka berukuran kecil.
           </p>
         </div>
-        <div className=" flex flex-col items-center  text-center leading-7">
+        <div className=" flex flex-col items-center  text-center leading-7 pb-10">
           <img
             src="./img/julang_sulawesi.png"
             className=" rounded-full border-4 border-y-sky-600 w-[50%] flex justify-center items-end "
@@ -118,7 +63,7 @@ const Informasi = () => {
             Hornbill.
           </p>
         </div>
-        <div className=" flex flex-col items-center  text-center leading-7">
+        <div className=" flex flex-col items-center  text-center leading-7  pb-10">
           <img
             src="./img/julang_sumba.png"
             className=" rounded-full border-4 border-y-sky-600 w-[50%] flex justify-center items-end "
@@ -132,7 +77,7 @@ const Informasi = () => {
             kanopi hutan.
           </p>
         </div>
-        <div className=" flex flex-col items-center  text-center leading-7">
+        <div className=" flex flex-col items-center  text-center leading-7 pb-10">
           <img
             src="./img/enggang_jambul.png"
             className=" rounded-full border-4 border-y-sky-600 w-[50%] flex justify-center items-end "
@@ -146,7 +91,7 @@ const Informasi = () => {
             individu dan kelompok besar; 20 individu.
           </p>
         </div>
-        <div className=" flex flex-col items-center  text-center leading-7">
+        <div className=" flex flex-col items-center  text-center leading-7 pb-10">
           <img
             src="./img/enggang_papan.jpg"
             className=" rounded-full border-4 border-y-sky-600 w-[50%] flex justify-center items-end "
@@ -160,7 +105,7 @@ const Informasi = () => {
             sedang berbuah.
           </p>
         </div>
-        <div className=" flex flex-col items-center  text-center leading-7">
+        <div className=" flex flex-col items-center  text-center leading-7 pb-10">
           <img
             src="./img/enggang_cula.png"
             className=" rounded-full border-4 border-y-sky-600 w-[50%] flex justify-center items-end "
@@ -174,7 +119,7 @@ const Informasi = () => {
             pasangannya.
           </p>
         </div>
-        <div className=" flex flex-col items-center  text-center leading-7">
+        <div className=" flex flex-col items-center  text-center leading-7 pb-10">
           <img
             src="./img/rangkong_gading.png"
             className=" rounded-full border-4 border-y-sky-600 w-[50%] flex justify-center items-end "
@@ -189,7 +134,7 @@ const Informasi = () => {
             perhatian lawan jenis.
           </p>
         </div>
-        <div className=" flex flex-col items-center  text-center leading-7">
+        <div className=" flex flex-col items-center  text-center leading-7 pb-10">
           <img
             src="./img/enggang_klihingan.png"
             className=" rounded-full border-4 border-y-sky-600 w-[50%] flex justify-center items-end "
@@ -202,7 +147,7 @@ const Informasi = () => {
             individu. Kelompok burung ini banyak ditemui di bawah kanopi hutan.
           </p>
         </div>
-        <div className=" flex flex-col items-center  text-center leading-7">
+        <div className=" flex flex-col items-center  text-center leading-7 pb-10">
           <img
             src="./img/kangkareng_perutPutih.jpg"
             className=" rounded-full border-4 border-y-sky-600 w-[50%] flex justify-center items-end "
@@ -216,7 +161,7 @@ const Informasi = () => {
             bahkan telah berubah.
           </p>
         </div>
-        <div className=" flex flex-col items-center  text-center leading-7">
+        <div className=" flex flex-col items-center  text-center leading-7 pb-10">
           <img
             src="./img/julang_Emas.png"
             className=" rounded-full border-4 border-y-sky-600 w-[50%] flex justify-center items-end "
@@ -230,7 +175,7 @@ const Informasi = () => {
             terhadap hilangnya habitat.
           </p>
         </div>
-        <div className=" flex flex-col items-center  text-center leading-7">
+        <div className=" flex flex-col items-center  text-center leading-7 pb-10">
           <img
             src="./img/julang_Irian.png"
             className=" rounded-full border-4 border-y-sky-600 w-[50%] flex justify-center items-end "
